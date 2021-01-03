@@ -1,5 +1,5 @@
 {
-  "name": "@sol/css-media-types",
+  "name": "@solx/css-media-types",
   "version": "0.0.0-development",
   "description": "'Typescriptification-of-media-query-types-package-in-npm'",
   "main": "dist/index.js",
