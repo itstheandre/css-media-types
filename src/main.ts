@@ -6,8 +6,11 @@ import { allMediaQueries, prevVersions } from "./utils";
  * Look for more information in the [specification page](https://drafts.csswg.org/mediaqueries/#media-types).
  * If this is not the easiest read, you can also check [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/@media)
  */
-export const cssMediaTypes = (options?: ICSSMediaTypesOptions) => {
-  const opts = options ? options : {};
-  const { prev = false } = opts as ICSSMediaTypesOptions;
+export const cssMediaTypes = (
+  options: ICSSMediaTypesOptions = { prev: false }
+) => {
+  // const opts = options ? options : {};
+  const { prev } = options;
+  // const { prev = false } = opts as ICSSMediaTypesOptions;
   return prev ? [...allMediaQueries, ...prevVersions] : [...allMediaQueries];
 };
