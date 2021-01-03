@@ -1,6 +1,12 @@
 devDependencies:
   '@commitlint/cli': 11.0.0
   '@commitlint/config-conventional': 11.0.0
+  '@semantic-release/changelog': 5.0.1_semantic-release@17.3.1
+  '@semantic-release/commit-analyzer': 8.0.1_semantic-release@17.3.1
+  '@semantic-release/git': 9.0.0_semantic-release@17.3.1
+  '@semantic-release/github': 7.2.0_semantic-release@17.3.1
+  '@semantic-release/npm': 7.0.9_semantic-release@17.3.1
+  '@semantic-release/release-notes-generator': 9.0.1_semantic-release@17.3.1
   '@types/jest': 26.0.19
   '@types/node': 14.14.19
   cz-conventional-changelog: 3.3.0
@@ -788,6 +794,20 @@ packages:
     dev: true
     resolution:
       integrity: sha512-LPCpcLbcky7fWfHCTuc7tMiSHFpFlrThJqVdaHgowBTMS0ijlZFfonQC/C1PrZOjD4xRCYgBqH9yttEATGE/nw==
+  /@semantic-release/changelog/5.0.1_semantic-release@17.3.1:
+    dependencies:
+      '@semantic-release/error': 2.2.0
+      aggregate-error: 3.1.0
+      fs-extra: 9.0.1
+      lodash: 4.17.20
+      semantic-release: 17.3.1
+    dev: true
+    engines:
+      node: '>=10.18'
+    peerDependencies:
+      semantic-release: '>=15.8.0 <18.0.0'
+    resolution:
+      integrity: sha512-unvqHo5jk4dvAf2nZ3aw4imrlwQ2I50eVVvq9D47Qc3R+keNqepx1vDYwkjF8guFXnOYaYcR28yrZWno1hFbiw==
   /@semantic-release/commit-analyzer/8.0.1_semantic-release@17.3.1:
     dependencies:
       conventional-changelog-angular: 5.0.12
@@ -809,6 +829,24 @@ packages:
     dev: true
     resolution:
       integrity: sha512-9Tj/qn+y2j+sjCI3Jd+qseGtHjOAeg7dU2/lVcqIQ9TV3QDaDXDYXcoOHU+7o2Hwh8L8ymL4gfuO7KxDs3q2zg==
+  /@semantic-release/git/9.0.0_semantic-release@17.3.1:
+    dependencies:
+      '@semantic-release/error': 2.2.0
+      aggregate-error: 3.1.0
+      debug: 4.3.1
+      dir-glob: 3.0.1
+      execa: 4.1.0
+      lodash: 4.17.20
+      micromatch: 4.0.2
+      p-reduce: 2.1.0
+      semantic-release: 17.3.1
+    dev: true
+    engines:
+      node: '>=10.18'
+    peerDependencies:
+      semantic-release: '>=16.0.0 <18.0.0'
+    resolution:
+      integrity: sha512-AZ4Zha5NAPAciIJH3ipzw/WU9qLAn8ENaoVAhD6srRPxTpTzuV3NhNh14rcAo8Paj9dO+5u4rTKcpetOBluYVw==
   /@semantic-release/github/7.2.0_semantic-release@17.3.1:
     dependencies:
       '@octokit/rest': 18.0.12
@@ -6617,6 +6655,12 @@ packages:
 specifiers:
   '@commitlint/cli': ^11.0.0
   '@commitlint/config-conventional': ^11.0.0
+  '@semantic-release/changelog': ^5.0.1
+  '@semantic-release/commit-analyzer': ^8.0.1
+  '@semantic-release/git': ^9.0.0
+  '@semantic-release/github': ^7.2.0
+  '@semantic-release/npm': ^7.0.9
+  '@semantic-release/release-notes-generator': ^9.0.1
   '@types/jest': ^26.0.19
   '@types/node': ^14.14.13
   cz-conventional-changelog: ^3.3.0
